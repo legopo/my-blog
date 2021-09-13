@@ -1,0 +1,25 @@
+{
+  "name": "my-blog",
+  "version": "1.0.0",
+  "description": "## Theme https://github.com/adityatelange/hugo-PaperMod/",
+  "main": "contentful-hugo.config.js",
+  "dependencies": {
+    "contentful-hugo": "^1.18.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "contentful-hugo --preview && hugo server",
+    "build": "contentful-hugo && hugo --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/legopo/my-blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/legopo/my-blog/issues"
+  },
+  "homepage": "https://github.com/legopo/my-blog#readme"
+}

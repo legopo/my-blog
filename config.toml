@@ -1,5 +1,53 @@
 baseURL = 'http://example.org/'
-languageCode = 'ja'
-title = 'Legopo Blog'
-themesDir = "./themes"
-theme = "PaperMod"
+languageCode = 'ja-jp'
+title = 'legopo blog'
+themesDir = './themes'
+theme = 'PaperMod'
+hasCJKLanguage = true
+buildDrafts = false
+summaryLength = 30
+
+[Params]
+dateformat = '2006/01/02'
+ShowReadingTime = true
+ShowShareButtons = false
+comments = false
+defaultTheme = "auto"
+disableThemeToggle = false
+ShowBreadCrumbs = true
+
+[Params.homeInfoParams]
+Title = 'Hi there.'
+Content = "Can be Info, links, about..."
+
+[taxonomies]
+tag = 'tags'
+category = 'categories'
+
+[[menu.main]]
+identifier = "archives"
+name = "Archives"
+url = "/archives/"
+weight = 10
+
+[[menu.main]]
+identifier = "categories"
+name = "Categories"
+url = "/categories/"
+weight = 20
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 30
+
+[[menu.main]]
+identifier = "search"
+name = "Search"
+url = "/search/"
+weight = 40
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
