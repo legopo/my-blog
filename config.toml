@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = "https://legopo.github.io/my-blog/"
 languageCode = 'ja-jp'
 title = 'legopo blog'
 themesDir = './themes'
