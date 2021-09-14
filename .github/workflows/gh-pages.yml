@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - main  # Set a branch name to trigger deployment
-  pull_request:
+  # pull_request:
+  repository_dispatch:
 
 jobs:
   deploy:
@@ -30,7 +31,8 @@ jobs:
           extended: true
 
       - name: Build
-        run: npm run build
+        # run: npm run build
+        run: ./node_modules/.bin/contentful-hugo && hugo --minify --baseUrl="https://legopo.github.io/my-blog/"
         env:
           CONTENTFUL_SPACE: ${{ secrets.CONTENTFUL_SPACE }}
           CONTENTFUL_TOKEN: ${{ secrets.CONTENTFUL_TOKEN }}
