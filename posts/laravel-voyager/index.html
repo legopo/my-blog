@@ -31,7 +31,7 @@
 <meta name=twitter:title content="Laravel Voyagerのメモ">
 <meta name=twitter:description content="Laravel Sail前提でプロジェクト作成する。(Docker必要) 起">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://legopo.github.io/my-blog/posts/"},{"@type":"ListItem","position":2,"name":"Laravel Voyagerのメモ","item":"https://legopo.github.io/my-blog/posts/laravel-voyager/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Laravel Voyagerのメモ","name":"Laravel Voyagerのメモ","description":"Laravel Sail前提でプロジェクト作成する。(Docker必要) 起","keywords":["Voyager","Laravel"],"articleBody":"Laravel Sail前提でプロジェクト作成する。(Docker必要) 起動してlocalhostで確認。 https://readouble.com/laravel/8.x/ja/installation.html\n$ curl -s \"https://laravel.build/voyager-tutorial\" | bash $ cd voyager-tutorial \u0026\u0026 ./vendor/bin/sail up  ./vendor/bin/sail を毎回撃たなくていいように、sail としてエイリアス登録しておく。\n Voyageのインストール –with-dummyオプションでダミーデータも作った。 https://voyager-docs.devdojo.com/getting-started/installation\n$ sail composer require tcg/voyager $ sail artisan voyager:install --with-dummy  localhost/admin でアクセス\n email: admin@admin.com password: password\n  管理画面ユーザーは usersテーブルがデフォルトで使われるので、場合によって変更する。 参考: https://divrots.com/2021/06/22/use-different-model-from-voyage-default/ https://voyager-docs.devdojo.com/customization/custom-guard\n ストレージをAWS S3などに変更する https://voyager-docs.devdojo.com/getting-started/configurations#storage\n ","wordCount":"228","inLanguage":"en","datePublished":"2021-09-14T08:49:01.599Z","dateModified":"2021-09-14T08:49:01.599Z","mainEntityOfPage":{"@type":"WebPage","@id":"https://legopo.github.io/my-blog/posts/laravel-voyager/"},"publisher":{"@type":"Organization","name":"legopo blog","logo":{"@type":"ImageObject","url":"https://legopo.github.io/my-blog/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Laravel Voyagerのメモ","name":"Laravel Voyagerのメモ","description":"Laravel Sail前提でプロジェクト作成する。(Docker必要) 起","keywords":["Voyager","Laravel"],"articleBody":"Laravel Sail前提でプロジェクト作成する。(Docker必要)\n起動してlocalhostで確認。\nhttps://readouble.com/laravel/8.x/ja/installation.html\n$ curl -s \"https://laravel.build/voyager-tutorial\" | bash $ cd voyager-tutorial \u0026\u0026 ./vendor/bin/sail up  ./vendor/bin/sail を毎回撃たなくていいように、sail としてエイリアス登録しておく。\n Voyageのインストール –with-dummyオプションでダミーデータも作った。\nhttps://voyager-docs.devdojo.com/getting-started/installation\n$ sail composer require tcg/voyager $ sail artisan voyager:install --with-dummy  localhost/admin でアクセス\n email: admin@admin.com password: password\n  管理画面ユーザーは usersテーブルがデフォルトで使われるので、場合によって変更する。\n参考: https://divrots.com/2021/06/22/use-different-model-from-voyage-default/ https://voyager-docs.devdojo.com/customization/custom-guard\n ストレージをAWS S3などに変更する https://voyager-docs.devdojo.com/getting-started/configurations#storage\n ","wordCount":"228","inLanguage":"en","datePublished":"2021-09-14T08:49:01.599Z","dateModified":"2021-09-14T08:49:01.599Z","mainEntityOfPage":{"@type":"WebPage","@id":"https://legopo.github.io/my-blog/posts/laravel-voyager/"},"publisher":{"@type":"Organization","name":"legopo blog","logo":{"@type":"ImageObject","url":"https://legopo.github.io/my-blog/favicon.ico"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -78,17 +78,17 @@ Laravel Voyagerのメモ
 <div class=post-meta>2021/09/14&nbsp;·&nbsp;1 min
 </div>
 </header>
-<div class=post-content><p>Laravel Sail前提でプロジェクト作成する。(Docker必要)
-起動してlocalhostで確認。
-<a href=https://readouble.com/laravel/8.x/ja/installation.html>https://readouble.com/laravel/8.x/ja/installation.html</a></p>
+<div class=post-content><p>Laravel Sail前提でプロジェクト作成する。(Docker必要)</p>
+<p>起動してlocalhostで確認。</p>
+<p><a href=https://readouble.com/laravel/8.x/ja/installation.html>https://readouble.com/laravel/8.x/ja/installation.html</a></p>
 <pre><code>$ curl -s &quot;https://laravel.build/voyager-tutorial&quot; | bash
 $ cd voyager-tutorial &amp;&amp; ./vendor/bin/sail up
 </code></pre>
 <p>./vendor/bin/sail を毎回撃たなくていいように、sail としてエイリアス登録しておく。</p>
 <hr>
 <p>Voyageのインストール
-&ndash;with-dummyオプションでダミーデータも作った。
-<a href=https://voyager-docs.devdojo.com/getting-started/installation>https://voyager-docs.devdojo.com/getting-started/installation</a></p>
+&ndash;with-dummyオプションでダミーデータも作った。</p>
+<p><a href=https://voyager-docs.devdojo.com/getting-started/installation>https://voyager-docs.devdojo.com/getting-started/installation</a></p>
 <pre><code>$ sail composer require tcg/voyager
 $ sail artisan voyager:install --with-dummy
 </code></pre>
@@ -98,8 +98,8 @@ $ sail artisan voyager:install --with-dummy
 password: password</p>
 </blockquote>
 <hr>
-<p>管理画面ユーザーは usersテーブルがデフォルトで使われるので、場合によって変更する。
-参考:
+<p>管理画面ユーザーは usersテーブルがデフォルトで使われるので、場合によって変更する。</p>
+<p>参考:
 <a href=https://divrots.com/2021/06/22/use-different-model-from-voyage-default/>https://divrots.com/2021/06/22/use-different-model-from-voyage-default/</a>
 <a href=https://voyager-docs.devdojo.com/customization/custom-guard>https://voyager-docs.devdojo.com/customization/custom-guard</a></p>
 <hr>
